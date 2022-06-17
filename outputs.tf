@@ -7,3 +7,7 @@ output "my_ip" {
 output "rfc1918" {
     value = ["10.0.0.0/8", "192.168.0.0/16", "172.16.0.0/12"]
 }
+
+output "creation_time" {
+    value = formatdate("YYYY-MM-DD-hh-mm-ZZZ", timestamp())
+}
